@@ -50,6 +50,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
             cold_count = cold_count + 1;
         }
 	var resultText = document.getElementById("results");
+	resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent;
   </script>
 
 
@@ -97,7 +98,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
     	<div id="content" class="w3-container">
          <p>Are your eyes watery or itchy?</p>
-		<a href="#two”  onclick="allergyAdd();” class="w3-btn w3-black"> Yes</a>
+		<a href="#two”  onclick="allergyAdd();” class="w3-btn w3-black">Yes</a>
 		<a href="#two"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
 	 </div><!-- /content -->  
 
@@ -105,12 +106,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div class="w3-container w3-flat-carrot">
 		<h1>Do you have general aches and pains?</h1>
 		<a href="#two”  onclick="allergyAdd();” class="w3-btn w3-black">No</a>
-		<a href="#two"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a>
+		<a href="#two"  onclick="coldAdd();" class="w3-btn w3-black">Yes</a>
 	</div>
 	
 <div class=page" id="results">
 		<p>Results</p>
-		<p id="results">resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; </p>
 	</div>
 
 <footer class="w3-bottom w3-container w3-flat-carrot">
@@ -119,6 +119,5 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 </body>
 </html>
-/*added div lines 98 trhough 108 to make the questions work, 
-added resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; to make results page work*/
+/added div lines 99 trhough 108 to make the questions work, added resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; to make results page work*/
 <!--added var resultText = document.getElementById("results")to line 52 to make the results function, added lines 112 through 114 to make the results page work-->
