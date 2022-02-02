@@ -93,18 +93,15 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <div class="page" id="one">
 	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Question 1</h1>
-	</div>
-	
-    	<div id="content" class="w3-container">
-         <p>Are your eyes watery or itchy?</p>
+		<h1>Are your eyes watery or itchy?</h1>
 		<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-black">Yes</a>
 		<a href="#two"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
-	 </div><!-- /content -->  
+	</div> 
 
 <div class="page" id="two">
-	<div class="w3-container w3-flat-carrot">
-		<p>Results</p>
+	<div id="header" class="w3-container w3-flat-carrot">
+		<p id="results"></p>
+		<h1>Results</h1>
 	</div>
 
 <footer class="w3-bottom w3-container w3-flat-carrot">
@@ -113,5 +110,5 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 </body>
 </html>
-<--added div lines 99 trhough 108 to make the questions work, added resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; to make results page work-->
+<!--added div lines 99 trhough 108 to make the questions work, added resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; to make results page work-->
 <!--added var resultText = document.getElementById("results")to line 52 to make the results function, added lines 112 through 114 to make the results page work-->
